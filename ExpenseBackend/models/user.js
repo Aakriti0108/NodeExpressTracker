@@ -11,7 +11,7 @@ const ExpenseTracker = sequelize.define('Expense-Tracker',{
     email:{
         type:Sequelize.STRING,
         allowNull:false,
-        
+        unique: true
     },
     password:Sequelize.STRING
 })

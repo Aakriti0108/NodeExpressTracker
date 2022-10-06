@@ -1,4 +1,4 @@
-function signup(e)
+function login(e)
 {
     e.preventDefault();
 
@@ -8,6 +8,12 @@ function signup(e)
     }
     
     console.log(loginDetails)
+
+    axios.post("http://localhost:3000/login",loginDetails)
+    .then(result=>{
+        alert("successfully login")
+    })
+    .catch(err=>console.log(err))
 
     
     e.target.email.value="";
