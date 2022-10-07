@@ -1,0 +1,55 @@
+body{
+    background-color: #EDDBC0;
+}
+
+.expense-heading{
+    text-align: center;
+    color: #4C0033;
+}
+
+.expense{
+    margin: 80px 550px;
+}
+
+label{
+    font-size:30px;
+    color: #4C0033;
+}
+
+input{
+    width:350px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgb(178, 110, 21);
+    background-color: blanchedalmond;
+}
+
+select{
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgb(178, 110, 21);
+    background-color: blanchedalmond;
+}
+
+
+#Addbtn{
+    width:100px;
+    height: 40px;
+    margin: 0px 115px;
+    border-radius: 15px;
+    border-color: rgb(178, 110, 21);
+    background-color: blanchedalmond;
+}
+
+button{
+    width:70px;
+    border-radius: 5px;
+    background-color: rgb(212, 223, 214);
+    border:5px solid grey
+}
+
+.userlist{
+    margin:30px;
+}
+

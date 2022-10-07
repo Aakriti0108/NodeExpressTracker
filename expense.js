@@ -10,14 +10,18 @@ const sequelize = require('./util/database')
 
 const userRoutes = require('./routes/expense')
 
+const expenseRoutes = require('./routes/expense')
+
 const product = require('./models/user')
 
+const expenseProducts = require('./models/expense')
 
 expense.use(cors())
 
 expense.use(bodyparser.json());
 
 expense.use(userRoutes);
+expense.use(expenseRoutes);
 
 sequelize
 //.sync({force:true})

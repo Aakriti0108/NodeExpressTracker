@@ -11,6 +11,7 @@ function login(e)
     axios.post("http://localhost:3000/login",loginDetails)
     .then(result=>{
         alert("login successfully")
+        window.location = "expense.html"
         console.log(result)
     })
     .catch(err =>{
