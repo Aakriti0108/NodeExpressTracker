@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const  sequelize  = require("../util/database");
 
-const ExpenseTracker = sequelize.define('Expense-Tracker',{
+const ExpenseTracker = sequelize.define('user',{
     id:{
         type:Sequelize.INTEGER,
         autoIncrement:true,

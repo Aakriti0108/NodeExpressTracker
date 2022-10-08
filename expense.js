@@ -12,9 +12,11 @@ const userRoutes = require('./routes/expense')
 
 const expenseRoutes = require('./routes/expense')
 
-const product = require('./models/user')
+const user = require('./models/user')
 
 const expenseProducts = require('./models/expense')
+
+const orderModels = require('./models/order')
 
 expense.use(cors())
 
@@ -22,6 +24,11 @@ expense.use(bodyparser.json());
 
 expense.use(userRoutes);
 expense.use(expenseRoutes);
+
+user.hasMany(expenseProducts)
+expenseProducts.belongsTo(user)
+
+
 
 sequelize
 //.sync({force:true})

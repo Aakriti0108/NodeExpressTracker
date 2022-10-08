@@ -3,15 +3,22 @@ const router = express.Router();
 
 const usercontroller = require('../controllers/user')
 const expensecontroller = require('../controllers/expense')
+const userauthenticate = require('../middleware/Auth')
+const purchasecontroller = require('../controllers/purchase')
 
 router.post('/signup',usercontroller.signup)
 
 router.post('/login',usercontroller.login)
 
-router.post('/addExpense',expensecontroller.addExpense)
+router.post('/addExpense',userauthenticate.authenticate,expensecontroller.addExpense)
 
-router.get('/getdetails',expensecontroller.getdetails)
+router.get('/getdetails',userauthenticate.authenticate,expensecontroller.getdetails)
 
-router.delete('/deleteInfo/:id', expensecontroller.deletedetails)
+router.delete('/deleteInfo/:id',userauthenticate.authenticate, expensecontroller.deletedetails)
+
+router.get('/purchase',userauthenticate.authenticate,purchasecontroller.purchasepremium)
+
+router.post('/updatepurchase',userauthenticate.authenticate, purchasecontroller.updateTransactionStatus)
+
 
 module.exports= router ;

@@ -11,6 +11,8 @@ function signup(e)
     console.log(signupDetails)
     axios.post("http://localhost:3000/signup",signupDetails)
     .then(result=>{
+        alert("signup successfully")
+        window.location = "login.html"
         console.log(result)
     })
     .catch(err =>{

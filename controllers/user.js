@@ -1,5 +1,12 @@
 const user = require('../models/user')
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+
+function generateAccessToken(id)
+{
+    return jwt.sign({userId:id},'aakriti')
+}
+
 
 function isstringinvalid(string)
 {
@@ -63,7 +70,7 @@ exports.login= async(req,res)=>{
             }
             if(result == true)
             {
-                res.status(200).json({success:true , message:"user is successfully logged"})
+                res.status(200).json({success:true , message:"user is successfully logged" , token: generateAccessToken(User[0].id)})
             }
             else
             {
