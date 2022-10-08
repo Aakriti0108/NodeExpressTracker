@@ -47,8 +47,22 @@ input{
 
 #login-btn{
     font-size: 40px;
-    margin:30px 200px;
+    margin:15px 200px;
     color: #D8D9CF;
     background-color: #372948;
     border:8px solid rgb(194, 180, 206);
+}
+
+.backtosign
+{
+    font-size: large;
+    color:rgba(237, 10, 10, 0.966);
+}
+
+.forgot
+{
+  margin:0px 20px;
+  background: none;
+  border: none;
+  font-size: large;
 }

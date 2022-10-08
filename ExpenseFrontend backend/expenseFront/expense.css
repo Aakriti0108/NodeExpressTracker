@@ -1,5 +1,7 @@
 body{
-    background-color: #EDDBC0;
+    background-image: url(https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60);
+
+    background-size: cover;
 }
 
 .expense-heading{
@@ -21,7 +23,7 @@ input{
     height: 30px;
     border-radius: 10px;
     border-color: rgb(178, 110, 21);
-    background-color: blanchedalmond;
+    background:none;
 }
 
 select{
@@ -29,7 +31,7 @@ select{
     height: 40px;
     border-radius: 10px;
     border-color: rgb(178, 110, 21);
-    background-color: blanchedalmond;
+    background:none;
 }
 
 
@@ -42,14 +44,28 @@ select{
     background-color: blanchedalmond;
 }
 
-button{
-    width:70px;
-    border-radius: 5px;
-    background-color: rgb(212, 223, 214);
-    border:5px solid grey
-}
 
 .userlist{
     margin:30px;
 }
+
+#rzp-button1
+{
+   position: fixed; 
+   bottom: 10px;
+   left: 10px;
+   background: none;
+   font-size: xx-large;
+   color: #4C0033;
+}
+
+#logout{
+    position: fixed;
+    top:20px;
+    right: 50px;
+    background: none;
+    font-size: x-large;
+}
+
+
 

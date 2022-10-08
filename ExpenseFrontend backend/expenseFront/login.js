@@ -12,6 +12,7 @@ function login(e)
     .then(result=>{
         alert("login successfully")
         window.location = "expense.html"
+        localStorage.setItem('token', result.data.token)
         console.log(result)
     })
     .catch(err =>{

@@ -28,6 +28,8 @@ expense.use(expenseRoutes);
 user.hasMany(expenseProducts)
 expenseProducts.belongsTo(user)
 
+user.hasMany(orderModels)
+orderModels.belongsTo(user)
 
 
 sequelize
