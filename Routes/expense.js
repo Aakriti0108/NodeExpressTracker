@@ -20,5 +20,9 @@ router.get('/purchase',userauthenticate.authenticate,purchasecontroller.purchase
 
 router.post('/updatepurchase',userauthenticate.authenticate, purchasecontroller.updateTransactionStatus)
 
+router.get('/AllUsers',userauthenticate.authenticate,expensecontroller.getAllUsers)
+
+router.get('/AllExpense/:id',expensecontroller.getAllExpenses)
+
 
 module.exports= router ;

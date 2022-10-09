@@ -16,7 +16,7 @@ function signup(e)
         console.log(result)
     })
     .catch(err =>{
-        console.log(err)
+       alert(err)
     })
     
     e.target.email.value="";

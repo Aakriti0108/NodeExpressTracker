@@ -1,4 +1,5 @@
 const Expense = require('../models/expense')
+const user = require('../models/user')
 
 
 exports.addExpense = async(req,res)=>{
@@ -18,7 +19,7 @@ exports.addExpense = async(req,res)=>{
 exports.getdetails =async(req,res,next)=>{
     Expense.findAll({where : {userId:req.user.id}})
     .then(response=>{
-     res.status(200).json({response})
+     res.status(200).json({response,user:req.user})
     })
     .catch(err=> res.status(500).json(err))
 }
@@ -36,3 +37,28 @@ exports.deletedetails=(req,res,next)=>{
         
         .catch(err=>{console.log(err)})
 }
+
+
+exports.getAllUsers = (req,res)=>{
+     user.findAll()
+      .then(result=>{
+        return res.status(201).json({success:true , data:result})
+      })
+      .catch(err =>{
+        return res.status(500).json({success:false , message:"failed"})
+      })
+}
+
+exports.getAllExpenses = (req,res)=>{
+    const userid = req.params.id
+    Expense.findAll({where:{userId:userid}})
+    .then(result=>{
+        return res.status(201).json({success:true , data:result})
+    })
+    .catch(err =>{
+        return res.status(500).json({success:false , data:err})
+    })
+}
+
+
+

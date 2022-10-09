@@ -10,10 +10,13 @@ const ExpenseTracker = sequelize.define('user',{
     },
     email:{
         type:Sequelize.STRING,
-        allowNull:false,
-        unique: true
+        allowNull:false
     },
-    password:Sequelize.STRING
+    password:Sequelize.STRING,
+    premiumuser:{
+        type:Sequelize.BOOLEAN,
+        default:false
+    }
 })
 
 module.exports = ExpenseTracker

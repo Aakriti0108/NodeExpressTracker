@@ -56,7 +56,22 @@ select{
    left: 10px;
    background: none;
    font-size: xx-large;
-   color: #4C0033;
+   color: #d9158e;
+}
+
+#body.premium
+{
+    background-image: url(https://thumbs.dreamstime.com/z/beautiful-autumn-foliage-background-brunches-falling-tree-leaves-sky-bokeh-98280795.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     color: black;
+ 
+}
+
+#logout.premium{
+    color: #4C0033;
 }
 
 #logout{
@@ -65,6 +80,13 @@ select{
     right: 50px;
     background: none;
     font-size: x-large;
+}
+
+#Addbtn.premium
+{
+    background-color: black;
+    color: azure;
+    
 }
 
 

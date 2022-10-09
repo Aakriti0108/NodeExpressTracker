@@ -16,6 +16,7 @@ function login(e)
         console.log(result)
     })
     .catch(err =>{
+        alert(err)
         console.log(err)
     })
     
