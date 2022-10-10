@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded',() =>{
             let email = result.data.data[i].email;
             let id = result.data.data[i].id;
             console.log(email);
-           leaderboard.innerHTML+= `<div>${email} <button onclick="getExpenses(${id})">Details</button></div>`
+           leaderboard.innerHTML+= `<div> ${email} <button onclick="getExpenses(${id})">Details</button></div>`
         }
     })
     .catch(err =>console.log(err))

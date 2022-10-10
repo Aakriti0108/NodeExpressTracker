@@ -46,7 +46,8 @@ window.addEventListener('DOMContentLoaded', () => {
              document.getElementById('logout').classList.add('premium')
              document.getElementById('Addbtn').classList.add('premium')
              document.getElementById('rzp-button1').classList.add('premium')
-             document.body.innerHTML+="<a href='leaderboard.html'>leaderboard</a>" 
+             document.body.innerHTML+="<a href='leaderboard.html'>leaderboard</a><br>"
+             document.body.innerHTML+="<a href='reports.html'>REPORT</a>" 
              document.getElementById('rzp-button1').remove()
              const logout = document.getElementById('logout')
             logout.addEventListener('click',()=>{
@@ -134,7 +135,8 @@ const logout = document.getElementById('logout')
              document.getElementById('logout').classList.add('premium')
              document.getElementById('Addbtn').classList.add('premium')
              document.getElementById('rzp-button1').classList.add('premium')
-             document.body.innerHTML+="<a href='leaderboard.html'>leaderboard</a>" 
+             document.body.innerHTML+="<a href='leaderboard.html'>leaderboard</a>"
+             document.body.innerHTML+="<a href='reports.html'>REPORT</a>"
              document.getElementById('rzp-button1').remove()
              const logout = document.getElementById('logout')
  logout.addEventListener('click',()=>{

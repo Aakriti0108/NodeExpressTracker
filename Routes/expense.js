@@ -24,5 +24,9 @@ router.get('/AllUsers',userauthenticate.authenticate,expensecontroller.getAllUse
 
 router.get('/AllExpense/:id',expensecontroller.getAllExpenses)
 
+router.get('/getReport',userauthenticate.authenticate,expensecontroller.getDailyExpense)
+
+router.get('/getWeeklyReport',userauthenticate.authenticate,expensecontroller.weeklyExpense)
+
 
 module.exports= router ;
