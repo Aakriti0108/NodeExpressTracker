@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <section class="login-complete-details">
+                 
+           <section class="login">
+              <div class="login-img">
+                <img src="https://images.unsplash.com/photo-1660679983389-50e21b396b7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDgwfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" width="600" height="600" >
+              </div>
+                <div class="login-details">
+                <h1>LOGIN</h1>
+                <form  onsubmit="login(event)">
+                <label for="email">Email</label><br><br>
+                <input type="email" name="email" required/><br><br>
+                <label for="password">Password</label><br><br>
+                <input type="password" name="password" required/><br><br>
+                <a href="./signup.html" class="backtosign"> Sign</a><br>
+                <button id="login-btn">LOGIN</button><br>
+                </form>
+                <br>  
+            </div>
+           </section>
+
+           <section class="login-auto.text">
+                <h2 class="auto-type" ></h2>
+          </section>
+
+    </section>   
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        
+<script>
+    var typed = new Typed(".auto-type",{
+        strings:[ `<pre>
+                 WELCOME TO EXPENSE TRACKER PAGE
+</pre>`],
+        typeSpeed : 20,
+        backSpeed:10,
+        loop : true
+    })
+</script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

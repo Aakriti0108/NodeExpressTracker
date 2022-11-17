@@ -1,0 +1,93 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60);
+
+    background-size: cover;
+}
+
+.expense-heading{
+    text-align: center;
+    color: #4C0033;
+}
+
+.expense{
+    margin: 80px 550px;
+}
+
+label{
+    font-size:30px;
+    color: #4C0033;
+}
+
+input{
+    width:350px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgb(178, 110, 21);
+    background:none;
+}
+
+select{
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgb(178, 110, 21);
+    background:none;
+}
+
+
+#Addbtn{
+    width:100px;
+    height: 40px;
+    margin: 0px 115px;
+    border-radius: 15px;
+    border-color: rgb(178, 110, 21);
+    background-color: blanchedalmond;
+}
+
+
+.userlist{
+    margin:30px;
+}
+
+#rzp-button1
+{
+   position: fixed; 
+   bottom: 10px;
+   left: 10px;
+   background: none;
+   font-size: xx-large;
+   color: #d9158e;
+}
+
+#body.premium
+{
+    background-image: url(https://thumbs.dreamstime.com/z/beautiful-autumn-foliage-background-brunches-falling-tree-leaves-sky-bokeh-98280795.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     color: black;
+ 
+}
+
+#logout.premium{
+    color: #4C0033;
+}
+
+#logout{
+    position: fixed;
+    top:20px;
+    right: 50px;
+    background: none;
+    font-size: x-large;
+}
+
+#Addbtn.premium
+{
+    background-color: black;
+    color: azure;
+    
+}
+
+
+
