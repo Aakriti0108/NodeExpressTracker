@@ -12,7 +12,7 @@ function signup(e)
     axios.post("https://expensetracker0108.herokuapp.com/signup",signupDetails)
     .then(result=>{
         alert("signup successfully")
-        window.location = "login.html"
+        window.location = "index.html"
         console.log(result)
     })
     .catch(err =>{
